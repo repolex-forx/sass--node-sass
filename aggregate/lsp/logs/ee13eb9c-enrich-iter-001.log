@@ -1,0 +1,75 @@
+[2026-04-19T01:51:35Z] === ENRICH ITERATION 1 START | repo=sass/node-sass sha=ee13eb9c ===
+[2026-04-19T01:51:35Z] [iter=1] PHASE START: enrich repo=sass/node-sass sha=ee13eb9c runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ee13eb9c-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ee13eb9c62449d1e535189a063cbdd15583ebf32.nq.gz
+[2026-04-19T01:51:45Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-19T01:51:57Z] [iter=1] AST store loaded triples=1843817 load_secs=12 mem_mb=868 MB
+[2026-04-19T01:51:57Z] [iter=1] Step 2: Finding LSP targets mem_mb=868 MB
+[2026-04-19T01:51:59Z] [iter=1] LSP targets found call_sites=17188 imports=451 extends=58 implements=0 secs=1
+[2026-04-19T01:51:59Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=868 MB
+[2026-04-19T01:52:10Z] [iter=1] Position index built positions=117504 nodes_with_types=145486 secs=10 mem_mb=868 MB
+[2026-04-19T01:52:10Z] [iter=1] Step 3: Starting LSP resolution mem_mb=868 MB already_completed_types=[] already_completed_files=0
+[2026-04-19T01:52:10Z] [iter=1] Resolving target type target_type=call_site count=17188
+[2026-04-19T01:52:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=test/lowlevel.js
+[2026-04-19T02:04:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=2 resolved=16 errors=1017 current=test/cli.js
+[2026-04-19T02:10:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.4 files_done=3 resolved=30 errors=1539 current=test/types.js
+[2026-04-19T02:15:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.0 files_done=4 resolved=31 errors=1922 current=test/runtime.js
+[2026-04-19T02:16:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.7 files_done=6 resolved=35 errors=1974 current=test/watcher.js
+[2026-04-19T02:18:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.0 files_done=7 resolved=35 errors=2162 current=lib/index.js
+[2026-04-19T02:19:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.6 files_done=8 resolved=53 errors=2218 current=test/fixtures/extras/my_custom_functions_setter.js
+[2026-04-19T02:19:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.4 files_done=12 resolved=59 errors=2277 current=test/downloadoptions.js
+[2026-04-19T02:20:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.0 files_done=14 resolved=74 errors=2326 current=scripts/build.js
+[2026-04-19T02:21:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=16 resolved=91 errors=2367 current=test/useragent.js
+[2026-04-19T02:22:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.4 files_done=19 resolved=93 errors=2447 current=lib/binding.js
+[2026-04-19T02:22:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.9 files_done=36 resolved=94 errors=2484 current=src/libsass/src/expand.cpp
+[2026-04-19T02:25:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.6 files_done=37 resolved=96 errors=2702 current=src/sass_types/map.cpp
+[2026-04-19T02:26:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.6 files_done=38 resolved=96 errors=2779 current=src/libsass/src/inspect.cpp
+[2026-04-19T02:32:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.1 files_done=39 resolved=109 errors=3317 current=src/libsass/src/ast.cpp
+[2026-04-19T02:42:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.6 files_done=40 resolved=121 errors=4092 current=src/libsass/src/parser.cpp
+[2026-04-19T02:56:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.4 files_done=41 resolved=144 errors=5230 current=src/libsass/test/test_unification.cpp
+[2026-04-19T03:03:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.8 files_done=44 resolved=144 errors=5831 current=src/libsass/src/bind.cpp
+[2026-04-19T03:05:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.5 files_done=45 resolved=145 errors=5966 current=src/libsass/src/to_value.cpp
+[2026-04-19T03:07:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.2 files_done=47 resolved=152 errors=6190 current=src/libsass/test/test_paths.cpp
+[2026-04-19T03:16:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.3 files_done=49 resolved=159 errors=6934 current=src/libsass/src/ast.hpp
+[2026-04-19T03:20:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.6 files_done=50 resolved=202 errors=7201 current=src/sass_types/list.cpp
+[2026-04-19T03:20:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.3 files_done=51 resolved=202 errors=7259 current=src/libsass/src/extend.cpp
+[2026-04-19T03:28:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.4 files_done=52 resolved=205 errors=7925 current=src/libsass/src/json.cpp
+[2026-04-19T03:30:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.4 files_done=53 resolved=242 errors=8089 current=src/libsass/src/file.cpp
+[2026-04-19T03:31:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.4 files_done=54 resolved=261 errors=8169 current=src/libsass/src/output.cpp
+[2026-04-19T03:33:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.0 files_done=55 resolved=262 errors=8296 current=src/libsass/src/values.cpp
+[2026-04-19T03:34:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.6 files_done=56 resolved=262 errors=8352 current=src/libsass/src/utf8/core.h
+[2026-04-19T03:38:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.9 files_done=58 resolved=262 errors=8698 current=src/custom_importer_bridge.cpp
+[2026-04-19T03:39:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.4 files_done=60 resolved=266 errors=8821 current=src/libsass/src/functions.hpp
+[2026-04-19T03:40:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.4 files_done=61 resolved=266 errors=8904 current=src/libsass/src/position.hpp
+[2026-04-19T03:41:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.1 files_done=66 resolved=269 errors=8958 current=src/libsass/src/sass_context.cpp
+[2026-04-19T03:43:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.5 files_done=67 resolved=290 errors=9075 current=src/libsass/test/test_subset_map.cpp
+[2026-04-19T03:44:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.0 files_done=69 resolved=291 errors=9196 current=src/libsass/src/prelexer.cpp
+[2026-04-19T03:46:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.7 files_done=70 resolved=292 errors=9334 current=src/libsass/src/listize.cpp
+[2026-04-19T03:47:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.4 files_done=72 resolved=294 errors=9473 current=src/libsass/src/b64/encode.h
+[2026-04-19T03:57:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.1 files_done=74 resolved=344 errors=10268 current=src/libsass/src/sass_util.hpp
+[2026-04-19T03:58:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.0 files_done=76 resolved=349 errors=10343 current=src/libsass/src/environment.cpp
+[2026-04-19T03:59:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.7 files_done=78 resolved=349 errors=10395 current=src/sass_types/sass_value_wrapper.h
+[2026-04-19T04:00:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.5 files_done=80 resolved=349 errors=10466 current=src/libsass/src/lexer.cpp
+[2026-04-19T04:01:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.1 files_done=83 resolved=360 errors=10594 current=src/libsass/contrib/plugin.cpp
+[2026-04-19T04:02:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.9 files_done=85 resolved=360 errors=10658 current=src/libsass/src/error_handling.cpp
+[2026-04-19T04:03:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.6 files_done=86 resolved=360 errors=10714 current=src/libsass/src/to_c.cpp
+[2026-04-19T04:03:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.1 files_done=88 resolved=362 errors=10758 current=src/libsass/src/sass_values.cpp
+[2026-04-19T04:04:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.8 files_done=91 resolved=362 errors=10808 current=src/libsass/src/utf8/checked.h
+[2026-04-19T04:04:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.3 files_done=92 resolved=364 errors=10852 current=src/libsass/src/color_maps.cpp
+[2026-04-19T04:05:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.1 files_done=95 resolved=366 errors=10918 current=src/libsass/src/source_map.cpp
+[2026-04-19T04:06:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.7 files_done=96 resolved=367 errors=10961 current=src/libsass/src/sass_functions.cpp
+[2026-04-19T04:06:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.2 files_done=99 resolved=368 errors=11002 current=src/libsass/src/ast_fwd_decl.hpp
+[2026-04-19T04:08:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.4 files_done=100 resolved=368 errors=11101 current=src/libsass/src/utf8/unchecked.h
+[2026-04-19T04:09:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.9 files_done=104 resolved=387 errors=11223 current=src/libsass/src/extend.hpp
+[2026-04-19T04:10:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.5 files_done=107 resolved=387 errors=11269 current=src/libsass/src/lexer.hpp
+[2026-04-19T04:10:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.0 files_done=110 resolved=396 errors=11311 current=src/libsass/src/utf8_string.cpp
+[2026-04-19T04:11:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.6 files_done=120 resolved=414 errors=11355 current=src/libsass/test/test_specificity.cpp
+[2026-04-19T04:11:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.2 files_done=130 resolved=417 errors=11395 current=src/libsass/src/backtrace.cpp
+[2026-04-19T04:12:00Z] [iter=1] Target type resolved target_type=call_site resolved=419 errors=11405 secs=8391 mem_mb=868 MB
+[2026-04-19T04:12:00Z] [iter=1] Resolving target type target_type=import_statement count=451
+[2026-04-19T04:12:15Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=140.7 files_done=36 resolved=171 errors=0 current=src/libsass/src/extend.cpp
+[2026-04-19T04:12:41Z] [iter=1] Target type resolved target_type=import_statement resolved=401 errors=0 secs=41 mem_mb=868 MB
+[2026-04-19T04:12:41Z] [iter=1] Resolving target type target_type=extends_clause count=58
+[2026-04-19T04:12:45Z] [iter=1] HEARTBEAT target_type=extends_clause elapsed_min=141.2 files_done=10 resolved=49 errors=0 current=src/sass_types/null.h
+[2026-04-19T04:12:47Z] [iter=1] Target type resolved target_type=extends_clause resolved=57 errors=0 secs=5 mem_mb=868 MB
+[2026-04-19T04:12:52Z] [iter=1] Step 5: Writing final enrichment file triples=75658
+[2026-04-19T04:12:54Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/ee13eb9c62449d1e535189a063cbdd15583ebf32.nq.gz size_kb=1483
+[2026-04-19T04:12:54Z] [iter=1] PHASE END: enrich elapsed_s=8479 elapsed_min=141.3 total_triples=75658
